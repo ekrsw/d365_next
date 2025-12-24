@@ -1,0 +1,15 @@
+[project]
+name = "scrape"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bs4>=0.0.2",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.1",
+    "pytk>=0.0.2.1",
+    "selenium>=4.34.2",
+    "webdriver-manager>=4.0.2",
+    "xlsxwriter>=3.2.5",
+]
