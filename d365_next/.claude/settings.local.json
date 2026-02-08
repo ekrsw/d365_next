@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: initialize Next.js project with D365 integration\n\nInitial project setup including:\n- Next.js 15 with App Router and TypeScript\n- D365 API integration \\(src/lib/d365.ts\\)\n- Incidents API route \\(src/app/api/incidents\\)\n- ESLint and PostCSS configuration\n- Tailwind CSS styling\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(netstat:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "mcp__serena__list_dir",
+      "mcp__sequential-thinking__sequentialthinking",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__get-library-docs",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest add card table button input badge skeleton alert progress separator -y)",
+      "Bash(npm run build:*)",
+      "Bash(npm run dev:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_click"
+    ]
+  }
+}
