@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, Loader2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { DashboardHeader } from "@/components/dashboard-header";
 import { SummaryCards } from "@/components/summary-cards";
@@ -94,9 +94,18 @@ export default function Home() {
           </Alert>
         )}
 
-        {loading && <DashboardSkeleton />}
+        {loading && !data && <DashboardSkeleton />}
 
-        {data && !loading && (
+        {loading && data && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-background/60 backdrop-blur-sm">
+            <div className="flex flex-col items-center gap-3 rounded-xl bg-card p-6 shadow-lg border">
+              <Loader2 className="size-8 animate-spin text-primary" />
+              <p className="text-sm text-muted-foreground">データ取得中...</p>
+            </div>
+          </div>
+        )}
+
+        {data && (
           <>
             <SummaryCards
               date={data.date}
