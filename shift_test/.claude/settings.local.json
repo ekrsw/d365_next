@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__serena__list_dir",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(psql:*)",
+      "Bash(PGPASSWORD=password psql:*)",
+      "Bash(npx create-next-app:*)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest init:*)",
+      "Bash(npx shadcn@latest add:*)",
+      "Bash(npx prisma init:*)",
+      "Bash(npx prisma migrate:*)",
+      "Bash(npx prisma generate)",
+      "Bash(npx next build)",
+      "Bash(npx zod --version)",
+      "Bash(npm ls:*)",
+      "Bash(node:*)",
+      "Bash(node -e:*)",
+      "Bash(timeout 15 npx next dev:*)",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_fill_form",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_wait_for",
+      "mcp__playwright__browser_console_messages",
+      "Bash(npx tsc:*)",
+      "Bash(wc:*)",
+      "Bash(tail:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(DATABASE_URL=\"postgresql://postgres:password@localhost:5432/shift_database\" node:*)",
+      "Bash(PRISMA_USER_CONSENT_FOR_DANGEROUS_AI_ACTION=\"yes\" npx prisma migrate reset:*)",
+      "Bash(npx prisma db execute:*)",
+      "Bash(npx tsx -e:*)",
+      "Bash(npx next dev:*)",
+      "mcp__playwright__browser_close"
+    ]
+  }
+}
