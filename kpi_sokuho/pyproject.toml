@@ -1,0 +1,9 @@
+[project]
+name = "kpi-sokuho"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "playwright>=1.59.0",
+    "python-dotenv>=1.2.2",
+]

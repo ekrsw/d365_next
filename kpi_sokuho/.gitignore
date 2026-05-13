@@ -1,0 +1,41 @@
+# Secrets / config
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# uv
+.uv/
+
+# Data / logs (実行時生成物)
+data/
+logs/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Playwright 探索の副産物
+.playwright-mcp/
+*.png
+test-results/
+playwright-report/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Claude Code
+.claude/
